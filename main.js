@@ -24,18 +24,14 @@ let app = new Vue ({
   methods: {
     next(){
       this.counter++;
-      if (this.counter === this.slides.lenght) {
-      this.counter = this.slides.length;
-    } else if (this.counter >= this.slides.length) {
-       this.counter = 0;
-     }
+      if (this.counter > (this.slides.length -1)) {
+      this.counter = 0;
+    }
    },
    prev(){
      this.counter--
-     if (this.counter >= 0) {
-      this.counter = this-slides.length;
-     } else {
-       this.counter = 3;
+     if (this.counter < 0) {
+      this.counter = this.slides.length -1;
      }
    }
  },
