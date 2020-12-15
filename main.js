@@ -18,8 +18,11 @@ let app = new Vue ({
       "https://static.photocdn.pt/images/articles/2017/04/28/iStock-646511634.jpg",
       "https://cdn.mos.cms.futurecdn.net/FUE7XiFApEqWZQ85wYcAfM.jpg",
       "https://static.photocdn.pt/images/articles/2017/04/28/iStock-546424192.jpg"
-    ]
+    ],
+
   },
+  
+
  // funzioni per scorrere avanti e indietro;
   methods: {
     next(){
