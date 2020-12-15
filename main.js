@@ -27,14 +27,15 @@ let app = new Vue ({
       if (this.counter === this.slides.lenght) {
       this.counter = this.slides.length;
     } else if (this.counter >= this.slides.length) {
-       this.counter = this.slides.length -4;
+       this.counter = 0;
      }
    },
    prev(){
-     if (this.counter > 0) {
-       this.counter--
+     this.counter--
+     if (this.counter >= 0) {
+      this.counter = this-slides.length;
      } else {
-       this.counter = this.slides.length -1;
+       this.counter = 3;
      }
    }
  },
